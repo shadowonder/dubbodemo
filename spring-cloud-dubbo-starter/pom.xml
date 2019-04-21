@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.wandm</groupId>
+        <artifactId>spring-cloud-dubbo-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>spring-cloud-dubbo-starter</artifactId>
+    <url>http://www.wandm.com</url>
+
+    <dependencies>
+        <!-- Spring -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!-- Projects -->
+        <!--可以使用feign直接注册，而不需要两个注解-->
+        <dependency>
+            <groupId>com.wandm</groupId>
+            <artifactId>spring-cloud-dubbo-core</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+        <!--可以注册到nacos中-->
+        <dependency>
+            <groupId>com.wandm</groupId>
+            <artifactId>spring-cloud-dubbo-nacos</artifactId>
+            <version>${project.parent.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
