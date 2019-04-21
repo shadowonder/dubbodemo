@@ -1,0 +1,2 @@
+# dubbodemo
+基于dubbo的springcloud解决方案，根据不同的jar管理使用不同的解决方案
