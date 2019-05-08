@@ -1,5 +1,5 @@
 # dubbodemo
-基于dubbo的springcloud解决方案，根据不同的jar管理使用不同的解决方案
+基于dubbo的springcloud解决方案，根据jar管理使用不同的解决方案
 
 使用nacos作为注册中心
 在starter中整合feign和dubbo。修改了dubbo中的scan方案，让其可以扫描feign的注解，所以调用feign的时候可以直接使用dubbo的RPC传输
